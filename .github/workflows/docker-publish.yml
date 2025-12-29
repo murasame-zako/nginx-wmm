@@ -11,6 +11,8 @@ env:
 jobs:
   build-and-push:
     runs-on: ubuntu-latest
+    environment:
+      name: DockerHub
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
