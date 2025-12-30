@@ -100,6 +100,9 @@ ln -s /usr/local/nginx/sbin/nginx /sbin/nginx
 ln -s /usr/local/nginx/conf/ /etc/nginx
 ln -s /usr/local/nginx/logs/ /var/log/nginx
 
+ln -s /dev/stdout /usr/local/nginx/logs/access.log
+ln -s /dev/stderr /usr/local/nginx/logs/error.log
+
 cp docker-entrypoint.sh /
 chmod 777 /docker-entrypoint.sh
 
