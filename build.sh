@@ -44,6 +44,7 @@ git clone --recursive https://github.com/arut/nginx-rtmp-module
 git clone --recursive https://github.com/openresty/headers-more-nginx-module
 git clone --recursive https://github.com/leev/ngx_http_geoip2_module
 git clone --recursive https://github.com/aperezdc/ngx-fancyindex
+git clone --recurse-submodules https://github.com/wargio/naxsi
 
 wget http://nginx.org/download/nginx-${NGINX_VERSION}.tar.gz
 tar xzf nginx-${NGINX_VERSION}.tar.gz
@@ -57,6 +58,7 @@ bash ./configure \
 	--add-module=../headers-more-nginx-module \
 	--add-module=../ngx_http_geoip2_module \
 	--add-module=../ngx-fancyindex \
+	--add-module=../naxsi/naxsi_src \
 	--with-select_module \
 	--with-poll_module \
 	--with-threads \
