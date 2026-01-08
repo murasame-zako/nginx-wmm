@@ -1,6 +1,6 @@
 FROM alpine:latest
 ADD * /build
-ENV NGINX_VERSION="1.28.0"
+ENV NGINX_VERSION="1.28.1"
 ENV NGINX_USER=www-data
 ENV NGINX_UID=33
 RUN \
